@@ -1,9 +1,12 @@
 /*
   Використовуйте generics та інтерфейси, щоб виправити помилку в наступних класах:
 */
+interface PropsData {
+  title: string;
+}
 
-class Component {
-  constructor (public props:T) {
+class Component<T = PropsData> {
+  constructor (public props: T) {
 
   }
 }
